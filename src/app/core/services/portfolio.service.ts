@@ -47,7 +47,7 @@ export class PortfolioService {
       {
         degree: "Tecnólogo en Análisis y Desarrollo de Software",
         institution: "Servicio Nacional de Aprendizaje (SENA)",
-        period: "Dic 2025 - Mar 2028"
+        period: "Dic 2025 - Mar 2028 (En curso)"
       },
       {
         degree: "Técnico Laboral en Inglés",
