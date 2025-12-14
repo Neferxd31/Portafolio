@@ -1,0 +1,30 @@
+<section class="hero-container container">
+  
+  <div class="profile-card">
+    <div class="image-wrapper">
+      <img [src]="profile.photoUrl" [alt]="profile.name" class="profile-photo">
+    </div>
+    <div class="profile-details">
+      <h2>{{ profile.name }}</h2>
+      <h3 class="role">{{ profile.role }}</h3>
+      <p class="location">📍 {{ profile.location }}</p>
+    </div>
+  </div>
+
+  <div class="bio-content">
+    <h3>Sobre Mí</h3>
+    <p class="description">{{ bio.description }}</p>
+    
+    <div class="experience-list">
+      <h4>Trayectoria</h4>
+      <ul>
+        @for (item of bio.experience; track item) {
+          <li>✅ {{ item }}</li>
+        }
+      </ul>
+    </div>
+    
+    <a href="#contacto" class="btn contact-btn">Contáctame</a>
+  </div>
+
+</section>

@@ -1,0 +1,12 @@
+<section class="extras-section container">
+  <h2>Formación y Extras</h2>
+  <div class="extras-grid">
+    @for (item of extras; track item.title) {
+      <div class="extra-card">
+        <span class="type-badge">{{ item.type }}</span>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </div>
+    }
+  </div>
+</section>

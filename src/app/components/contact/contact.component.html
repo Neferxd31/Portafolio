@@ -1,0 +1,51 @@
+<section class="contact-section" id="contacto">
+  <div class="container">
+    <h2>Contáctame</h2>
+    <p class="subtitle">¿Tienes un proyecto en mente o quieres colaborar? ¡Hablemos!</p>
+    
+    <div class="contact-wrapper">
+      
+      <div class="contact-card info-card">
+        <h3>Información de Contacto</h3>
+        
+        <div class="info-item">
+          <span class="label">📞 Teléfono / WhatsApp:</span>
+          <a [href]="'https://wa.me/573148548544'" target="_blank" class="value link">
+            {{ phone }}
+          </a>
+        </div>
+
+        <div class="info-item">
+          <span class="label">📧 Correo Electrónico:</span>
+          <a [href]="'mailto:' + email" class="value link">
+            {{ email }}
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a [href]="linkedin" target="_blank" class="social-btn linkedin" title="LinkedIn">
+            <i class="devicon-linkedin-plain"></i>
+          </a>
+          <a [href]="github" target="_blank" class="social-btn github" title="GitHub">
+            <i class="devicon-github-original"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card action-card">
+        <h3>Acciones Rápidas</h3>
+        <p>Descarga mi hoja de vida para ver mi trayectoria detallada o envíame un correo directo.</p>
+        
+        <div class="buttons-column">
+          <a [href]="cvUrl" target="_blank" class="btn btn-primary big-btn">
+            📄 Descargar CV (PDF)
+          </a>
+          <a [href]="'mailto:' + email" class="btn btn-outline big-btn">
+            🚀 Envíame un mensaje
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

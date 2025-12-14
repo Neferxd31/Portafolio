@@ -1,0 +1,15 @@
+<section class="education-section container">
+  <h2>Formación Académica</h2>
+  <div class="education-grid">
+    @for (item of education; track item.degree) {
+      <div class="edu-card">
+        <div class="icon-cap">🎓</div>
+        <div class="edu-info">
+          <h3>{{ item.degree }}</h3>
+          <span class="institution">{{ item.institution }}</span>
+          <span class="period">{{ item.period }}</span>
+        </div>
+      </div>
+    }
+  </div>
+</section>

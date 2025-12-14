@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  portafolio:
+    # Construye la imagen usando el Dockerfile de la carpeta actual (.)
+    build: .
+    
+    # Mapeo de puertos: "PUERTO_DE_TU_PC : PUERTO_DEL_CONTENEDOR"
+    # Podrás ver la web en localhost:8080
+    ports:
+      - "8080:80"
+    
+    # Nombre amigable para identificarlo en Docker Desktop
+    container_name: mi-portafolio-container

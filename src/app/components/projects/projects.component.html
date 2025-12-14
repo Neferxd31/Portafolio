@@ -1,0 +1,38 @@
+<section class="projects-section container" id="proyectos">
+  <h2>Mis Proyectos</h2>
+  
+  <div class="projects-grid">
+    @for (project of projects; track project.id) {
+      <article class="project-card">
+        
+        <div class="card-image">
+          <a [href]="project.linkExternal" target="_blank">
+            <img [src]="project.imageUrl" [alt]="project.title">
+          </a>
+        </div>
+
+        <div class="card-content">
+          <a [href]="project.linkExternal" target="_blank" class="title-link">
+            <h3>{{ project.title }}</h3>
+          </a>
+
+          <p>{{ project.description }}</p>
+          
+          <div class="tags">
+            @for (tag of project.tags; track tag) {
+              <span class="tag">{{ tag }}</span>
+            }
+          </div>
+
+          <div class="card-actions">
+            <!-- <a [href]="project.linkExternal" target="_blank" class="btn-project">
+              Ver Proyecto <i class="devicon-github-original"></i> 
+              ↗
+            </a> -->
+          </div>
+
+        </div>
+      </article>
+    }
+  </div>
+</section>
