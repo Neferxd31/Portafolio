@@ -77,9 +77,22 @@ export class PortfolioService {
         imageUrl: "assets/images/project2.jpg",
         tags: ["Java", "Spring Boot", "Scrum"],
         linkExternal: "https://github.com/Neferxd31/Quick-Delivery"
+      },
+      {
+        id: 3,
+        title: "Tymon asesorias",
+        description: "Landing page para servicios legales y de transporte. Interfaz moderna y despliegue ágil para captación de clientes.",
+        imageUrl: "assets/images/project3.jpg",
+        tags: ["HTML5", "CSS3", "JS", "Netlify"],
+        linkExternal: "https://tymon.netlify.app/"
       }
     ],
     extras: [
+      {
+        title: "Curso de Automatizaciones con n8n",
+        description: "Platzi (Dic 2025).",
+        type: "COURSE"
+      },
       {
         title: "Dispositivos de Red y Configuración Inicial",
         description: "Cisco Networking Academy (Nov 2025).",
